@@ -1,0 +1,14 @@
+{
+    "database": "Facilitron_common",
+    "collection": "owners",
+    "roles": [
+        {
+            "name": "readAll",
+            "apply_when": {},
+            "insert": false,
+            "delete": false,
+            "read": true,
+            "search": true
+        }
+    ]
+}

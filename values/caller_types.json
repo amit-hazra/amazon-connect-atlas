@@ -1,0 +1,7 @@
+{
+    "name": "caller_types",
+    "value": {
+        "ADMIN": "admin",
+        "RENTER": "renter"
+    }
+}

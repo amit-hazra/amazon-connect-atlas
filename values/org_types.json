@@ -1,0 +1,7 @@
+{
+    "name": "org_types",
+    "value": {
+        "OWNER": "admin",
+        "RENTER": "renter"
+    }
+}

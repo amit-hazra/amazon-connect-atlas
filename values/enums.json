@@ -1,0 +1,23 @@
+{
+    "name": "enums",
+    "value": {
+        "USER_STATUSES": {
+            "PENDING": 0,
+            "ACTIVE": 1,
+            "DELETED": 4
+        },
+        "RESERVATION_STATUSES": {
+            "PENDING": 0,
+            "APPROVED": 1,
+            "CANCELLED": 2,
+            "DECLINED": 4
+        },
+        "PAYMENT_TYPES_ENUMS": {
+            "PAYPAL": 1,
+            "CREDIT_CARD": 2,
+            "BANK_CHECK": 3,
+            "E_CHECK": 4,
+            "CASH": 5
+        }
+    }
+}

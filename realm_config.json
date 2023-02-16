@@ -1,0 +1,9 @@
+{
+    "app_id": "amazon-connect-dev-tctsd",
+    "config_version": 20210101,
+    "name": "amazon-connect-dev",
+    "location": "US-VA",
+    "provider_region": "aws-us-east-1",
+    "deployment_model": "GLOBAL",
+    "environment": "development"
+}
