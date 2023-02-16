@@ -1,0 +1,15 @@
+{
+    "collection": "suspension_policies",
+    "database": "Facilitron_Dev",
+    "roles": [
+        {
+            "name": "readAll",
+            "apply_when": {},
+            "read": true,
+            "write": false,
+            "insert": false,
+            "delete": false,
+            "search": true
+        }
+    ]
+}
