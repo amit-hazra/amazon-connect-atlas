@@ -1,15 +1,7 @@
 {
-  "custom-function": {
-    "name": "custom-function",
-    "type": "custom-function",
-    "config": {
-      "authFunctionName": "HandleCustomFunctionAuthentication"
-    },
-    "disabled": false
-  },
-  "api-key": {
-    "name": "api-key",
-    "type": "api-key",
-    "disabled": true
-  }
+    "api-key": {
+        "name": "api-key",
+        "type": "api-key",
+        "disabled": true
+    }
 }

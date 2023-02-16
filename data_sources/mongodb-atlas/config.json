@@ -2,8 +2,8 @@
     "name": "mongodb-atlas",
     "type": "mongodb-atlas",
     "config": {
-        "clusterName": "WeKanAmazonConnectDev",
-        "readPreference": "nearest",
+        "clusterName": "WeKanDev",
+        "readPreference": "primary",
         "wireProtocolEnabled": false
     },
     "version": 1
