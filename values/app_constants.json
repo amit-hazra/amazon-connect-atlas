@@ -1,7 +1,7 @@
 {
+    "from_secret": false,
     "name": "app_constants",
     "value": {
         "MAX_RETRIEVAL_LIMIT": 2147483647
     }
-    
 }

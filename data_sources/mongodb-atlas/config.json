@@ -3,7 +3,7 @@
     "type": "mongodb-atlas",
     "config": {
         "clusterName": "WeKanDev",
-        "readPreference": "primary",
+        "readPreference": "nearest",
         "wireProtocolEnabled": false
     },
     "version": 1

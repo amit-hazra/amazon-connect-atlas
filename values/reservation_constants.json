@@ -1,73 +1,74 @@
 {
+    "from_secret": false,
     "name": "reservation_constants",
     "value": {
-        "COMMENT_TYPES": {
-            "EXTERNAL": "external",
-            "INTERNAL": "internal"
-        },
-        "RESERVATION_TYPES": {
-            "EXTERNAL": "External",
-            "INTERNAL": "Internal",
-            "FAMILY": "Family"
-        },
-        "CHARGE_DESCRIPTIONS": {
-            "BOUNCED_CHECKED_FEE": "bounced_check_fee",
-            "REFUND_BOUNCED_CHECK_FEE": "refund_bounced_check_fee",
-            "SALES_TAX": "sales_tax",
-            "PAYMENT_PROCESSING_FEE": "payment_processing_fee"
-        },
         "CHARGE_CATEGORIES": {
             "NON_REFUNDABLE": 2,
             "NON_REFUNDABLE_DECLINE": 3
         },
-        "WALLET_NAMES": {
-            "ECHECK": "echeck_payment",
-            "PROCESSING_FEE": "payment_processing_fee",
-            "PAYMENT_TO_ACCOUNT": "payment_to_account",
-            "RESERVATION_TRANSFER": "reservation_transfer",
-            "BOUNCEDD": "bounced_payment",
-            "RENTER_PAYMENT": "renter_payment",
-            "REFUND_TO_ACCOUNT": "refund_to_account",
-            "RESERVATION_PAYMENT": "reservation_payment",
-            "INSURANCE_PAYMENT": "insurance_payment",
-            "SWEEP_RECEIVED": "sweep_received",
-            "SWEEP_SENT": "sweep_sent"
+        "CHARGE_DESCRIPTIONS": {
+            "BOUNCED_CHECKED_FEE": "bounced_check_fee",
+            "PAYMENT_PROCESSING_FEE": "payment_processing_fee",
+            "REFUND_BOUNCED_CHECK_FEE": "refund_bounced_check_fee",
+            "SALES_TAX": "sales_tax"
         },
-        "PAYMENT_TYPES": {
-            "PAYPAL": "paypal",
-            "BANK_CHECK": "check",
-            "CASH": "cash",
-            "DIRECT_PAYMENT": "direct",
-            "E_CHECK": "Check",
-            "CREDIT_CARD": "CC"
+        "COMMENT_TYPES": {
+            "EXTERNAL": "external",
+            "INTERNAL": "internal"
+        },
+        "INSURANCE_DISPLAY_TEXT": {
+            "ADD_AUTO": "*Auto",
+            "COMPLETED": "Completed",
+            "EXPIRED": "Expired",
+            "EXPIRE_TODAY": "Expires today",
+            "FACILITRON": "Facilitron",
+            "INVALID": "Invalid",
+            "MISSING": "Missing",
+            "NA": "N/A",
+            "PENDING": "Pending Verification",
+            "PENDING_MANUAL": "Pending Manual Verification"
         },
         "INSURANCE_STATUS": {
             "COMPLETED": "completed",
-            "MISSING": "missing",
-            "INVALID": "invalid",
-            "PENDING": "pending",
             "EXPIRED": "expired",
-            "NA": "N/A",
-            "FACILITRON": "Facilitron"
-        },
-        "INSURANCE_DISPLAY_TEXT": {
-            "COMPLETED": "Completed",
-            "MISSING": "Missing",
-            "INVALID": "Invalid",
-            "PENDING": "Pending Verification",
-            "PENDING_MANUAL": "Pending Manual Verification",
-            "EXPIRED": "Expired",
-            "NA": "N/A",
             "FACILITRON": "Facilitron",
-            "EXPIRE_TODAY": "Expires today",
-            "ADD_AUTO": "*Auto"
+            "INVALID": "invalid",
+            "MISSING": "missing",
+            "NA": "N/A",
+            "PENDING": "pending"
         },
         "INSURANCE_TYPE": {
+            "CLIENT": "Client Insurance",
+            "FACILITRON": "Facilitron Provided",
             "INTERNAL": "Internal",
             "NO_INSURANCE_NEEDED": "N/I",
-            "FACILITRON": "Facilitron Provided",
-            "CLIENT": "Client Insurance",
             "PENDING": "Pending Verification"
+        },
+        "PAYMENT_TYPES": {
+            "BANK_CHECK": "check",
+            "CASH": "cash",
+            "CREDIT_CARD": "CC",
+            "DIRECT_PAYMENT": "direct",
+            "E_CHECK": "Check",
+            "PAYPAL": "paypal"
+        },
+        "RESERVATION_TYPES": {
+            "EXTERNAL": "External",
+            "FAMILY": "Family",
+            "INTERNAL": "Internal"
+        },
+        "WALLET_NAMES": {
+            "BOUNCEDD": "bounced_payment",
+            "ECHECK": "echeck_payment",
+            "INSURANCE_PAYMENT": "insurance_payment",
+            "PAYMENT_TO_ACCOUNT": "payment_to_account",
+            "PROCESSING_FEE": "payment_processing_fee",
+            "REFUND_TO_ACCOUNT": "refund_to_account",
+            "RENTER_PAYMENT": "renter_payment",
+            "RESERVATION_PAYMENT": "reservation_payment",
+            "RESERVATION_TRANSFER": "reservation_transfer",
+            "SWEEP_RECEIVED": "sweep_received",
+            "SWEEP_SENT": "sweep_sent"
         }
     }
 }

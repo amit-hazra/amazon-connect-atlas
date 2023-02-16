@@ -1,9 +1,9 @@
 {
     "values": {
+        "AWS_LAMBDA_AUTHORIZATION": "'AWS4-HMAC-SHA256 Credential=AKIA5XTXM5ZPHUZRDSU5/20221115/ap-northeast-1/execute-api/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=6a4418b67a971b0aaffd5545f4e0666915462c10501af188f852920260899b39'",
+        "AWS_LAMBDA_URL": "https://1memkl7eii.execute-api.us-east-1.amazonaws.com/dev/comparehash",
         "DATA_SOURCE": "mongodb-atlas",
         "DB_FACILITRON_COMMON": "Facilitron_common",
-        "DB_FACILITRON_DEV": "Facilitron_Dev",
-        "AWS_LAMBDA_URL": "https://1memkl7eii.execute-api.us-east-1.amazonaws.com/dev/comparehash",
-        "AWS_LAMBDA_AUTHORIZATION": "'AWS4-HMAC-SHA256 Credential=AKIA5XTXM5ZPHUZRDSU5/20221115/ap-northeast-1/execute-api/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=6a4418b67a971b0aaffd5545f4e0666915462c10501af188f852920260899b39'"
+        "DB_FACILITRON_DEV": "Facilitron_Dev"
     }
 }

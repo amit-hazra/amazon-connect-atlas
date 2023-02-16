@@ -1,4 +1,5 @@
 {
+    "from_secret": false,
     "name": "org_types",
     "value": {
         "OWNER": "admin",

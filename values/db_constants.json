@@ -1,24 +1,25 @@
 {
+    "from_secret": false,
     "name": "db_constants",
     "value": {
-        "DATA_SOURCE": "mongodb-atlas",
         "COLLECTIONS": {
-            "OWNERS": "owners",
-            "USERS": "users",
-            "OWNER_ENTITY": "owner_entities",
-            "RESERVATIONS": "reservations",
-            "RESERVATION_PAYMENTS": "reservation_payments",
-            "ROLES": "roles",
-            "WALLET_OWNERS": "wallet_owners",
-            "WALLET_USERS": "wallet_users",
+            "ARTICLES": "articles",
             "COMMISSION_TERMS": "commission_terms",
+            "DIRECTORIES": "directories",
+            "INSURANCE_STORAGES": "insurancestorages",
             "KNOWLEDGE_SYSTEMS": "knowledge_systems",
             "KS_CATEGORIES": "ks_categories",
             "KS_CATEGORY_FOLDERS": "ks_category_folders",
             "KS_FOLDER_ARTICLES": "ks_folder_articles",
-            "ARTICLES": "articles",
-            "DIRECTORIES": "directories",
-            "INSURANCE_STORAGES": "insurancestorages"
-        }
+            "OWNERS": "owners",
+            "OWNER_ENTITY": "owner_entities",
+            "RESERVATIONS": "reservations",
+            "RESERVATION_PAYMENTS": "reservation_payments",
+            "ROLES": "roles",
+            "USERS": "users",
+            "WALLET_OWNERS": "wallet_owners",
+            "WALLET_USERS": "wallet_users"
+        },
+        "DATA_SOURCE": "mongodb-atlas"
     }
 }
