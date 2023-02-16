@@ -1,38 +1,56 @@
-exports = async function(arg){
-  // This default function will get a value and find a document in MongoDB
-  // To see plenty more examples of what you can do with functions see: 
-  // https://www.mongodb.com/docs/atlas/app-services/functions/
+/**
+ * Get the list of users either by user email or search text(email, phone, last name).
+ * Use Facilitron_common.user collection to fetch user related information
+ * @param {userEmail?: string, searchText?: string} payload
+ * @returns [users]
+ */
 
-  // Find the name of the MongoDB service you want to use (see "Linked Data Sources" tab)
-  var serviceName = "mongodb_atlas";
+function SearchUsers(payload, pagination) {
+  let users = [];
 
-  // Update these to reflect your db/collection
-  var dbName = "db_name";
-  var collName = "coll_name";
+  if (!payload || payload === null) {
+    throw new Error("Invalid payload");
+  }
+  const CALLER_TYPES = context.values.get("caller_types");
 
-  // Get a collection from the context
-  var collection = context.services.get(serviceName).db(dbName).collection(collName);
-
-  var findResult;
-  try {
-    // Get a value from the context (see "Values" tab)
-    // Update this to reflect your value's name.
-    var valueName = "value_name";
-    var value = context.values.get(valueName);
-
-    // Execute a FindOne in MongoDB 
-    findResult = await collection.findOne(
-      { owner_id: context.user.id, "fieldName": value, "argField": arg},
-    );
-
-  } catch(err) {
-    console.log("Error occurred while executing findOne:", err.message);
-
-    return { error: err.message };
+  const {
+    userEmail,
+    userId,
+    searchText,
+    callerType = CALLER_TYPES.RENTER,
+  } = payload;
+  if (!userEmail && !userId && !searchText) {
+    throw new Error("Either of one argument is mandatory.");
   }
 
-  // To call other named functions:
-  // var result = context.functions.execute("function_name", arg1, arg2);
+  if (searchText) {
+    var startTimeFind = Date.now();
+    users = context.functions.execute(
+      "Private_SearchUsers",
+      searchText,
+      pagination
+    );
+    console.log(`Total time Private_SearchUsers took::: `, (Date.now() - startTimeFind) / 1000);
+  } else {
+    var startTimeFind = Date.now();
+    users = context.functions.execute(
+      "Private_GetUserByEmailOrId",
+      {
+        userId,
+        userEmail,
+        callerType,
+      },
+      pagination
+    );
+    console.log(`Private_GetUserByEmailOrId  took::: `, (Date.now() - startTimeFind) / 1000);
+  }
+  return users;
+}
 
-  return { result: findResult };
-};
+// Function exported to App Services
+exports = SearchUsers;
+
+// export locally for use in unit test
+if (typeof module !== "undefined") {
+  module.exports = { SearchUsers };
+}
