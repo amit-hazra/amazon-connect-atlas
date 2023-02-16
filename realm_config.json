@@ -1,7 +1,7 @@
 {
-    "app_id": "amazon-connect-dev-tctsd",
+    "app_id": "amazon-connect-atlas-xacph",
     "config_version": 20210101,
-    "name": "amazon-connect-dev",
+    "name": "amazon-connect-atlas",
     "location": "US-VA",
     "provider_region": "aws-us-east-1",
     "deployment_model": "GLOBAL",
