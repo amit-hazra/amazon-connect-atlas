@@ -1,110 +1,10 @@
 [
     {
-        "name": "GetChildOrgsByParentOrgID",
-        "private": false,
-        "disable_arg_logs": false
-    },
-    {
-        "name": "GetInsurances",
-        "private": false,
-        "disable_arg_logs": false
-    },
-    {
-        "name": "GetOrganizationsByUser",
-        "private": false,
-        "disable_arg_logs": false
-    },
-    {
-        "name": "GetPaymentDues",
-        "private": false,
-        "disable_arg_logs": false
-    },
-    {
-        "name": "GetPaymentHistory",
-        "private": false,
-        "disable_arg_logs": false
-    },
-    {
-        "name": "GetRecentComments",
-        "private": false,
-        "disable_arg_logs": false
-    },
-    {
-        "name": "GetReservationByID",
-        "private": false, 
-        "can_evaluate": {
-            "shortId": { "$exists": true }
-          },
-        "disable_arg_logs": false
-    },
-    {
-        "name": "GetReservationIds",
-        "private": false,
-        "disable_arg_logs": false
-    },
-    {
         "name": "GetGuides",
-        "private": false,
-        "disable_arg_logs": false
+        "private": false
     },
     {
-        "name": "SearchOrganization",
-        "private": false,
-        "disable_arg_logs": false
-    },
-    {
-        "name": "SearchReservation",
-        "private": false,
-        "disable_arg_logs": false
-    },
-    {
-        "name": "SearchUsers",
-        "private": false,
-        "disable_arg_logs": false
-    },
-    {
-        "name": "HasInsuranceIssues",
-        "private": false,
-        "disable_arg_logs": false
-    },
-    {
-        "name": "HandleCustomFunctionAuthentication",
-        "private": false,
-        "can_evaluate": {
-            "userEmail": { "$exists": true },
-            "password": { "$exists": true}
-          }
-    },
-    {
-        "name": "Private_IsValidUser",
-        "private": true
-    },
-    {
-        "name": "Private_SearchUsers",
-        "private": true
-    },
-    {
-        "name": "Private_GetInsuranceReservatonByOrgID",
-        "private": true
-    },
-    {
-        "name": "Private_GetInsuranceReservatonByUser",
-        "private": true
-    },
-    {
-        "name": "Private_GetPaymentDues",
-        "private": true
-    },
-    {
-        "name": "Private_GetDirectoryPath",
-        "private": true
-    },
-    {
-        "name": "Private_GetAdminOrgs",
-        "private": true
-    },
-    {
-        "name": "Private_GetChildOrgs",
+        "name": "Private_GetUserByEmailOrId",
         "private": true
     },
     {
@@ -112,35 +12,49 @@
         "private": true
     },
     {
-        "name": "Private_GetOwners",
-        "private": true
-    },
-    {
-        "name": "Private_GetRenterOrgs",
-        "private": true
-    },
-    {
-        "name": "Private_IsAdminRole",
-        "private": true
-    },
-    {
-        "name": "Private_SearchReservation",
-        "private": true
-    },
-    {
-        "name": "Private_GetUserByEmailOrId",
-        "private": true
+        "name": "GetChildOrgsByParentOrgID",
+        "private": false
     },
     {
         "name": "GetOrganizationDetails",
         "private": false
     },
     {
-        "name": "Private_PopulateOwnerAndRenter",
+        "name": "SearchOrganization",
+        "private": false
+    },
+    {
+        "name": "Private_GetCommissionTerms",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "Test",
+        "private": false
+    },
+    {
+        "name": "Private_CalculateReservationAmountDueAndCOIStatus",
         "private": true
     },
     {
-        "name": "Private_PopulateRoles",
+        "name": "SearchUsers",
+        "private": false
+    },
+    {
+        "name": "GetReservationIds",
+        "private": false
+    },
+    {
+        "name": "Test_GetAccountBalance",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "GetRecentComments",
+        "private": false
+    },
+    {
+        "name": "Private_GetDirectoryPath",
         "private": true
     },
     {
@@ -148,19 +62,93 @@
         "private": true
     },
     {
-        "name": "Test",
+        "name": "Private_IsAdminRole",
+        "private": true
+    },
+    {
+        "name": "Private_PopulateDirectory",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "Private_PopulateRoles",
+        "private": true
+    },
+    {
+        "name": "Private_SearchUsers",
+        "private": true
+    },
+    {
+        "name": "GetPaymentHistory",
         "private": false
+    },
+    {
+        "name": "Private_GetInsuranceReservatonByOrgID",
+        "private": true
+    },
+    {
+        "name": "Private_GetRenterOrgs",
+        "private": true
+    },
+    {
+        "name": "SearchReservation",
+        "private": false
+    },
+    {
+        "name": "Private_GetWalletPayments",
+        "private": true
     },
     {
         "name": "Test_ReservationMain",
         "private": true
     },
     {
-        "name": "Private_CalculateReservationAmountDueAndCOIStatus",
+        "name": "Private_GetInsuranceReservatonByUser",
         "private": true
     },
     {
-        "name": "Private_GetWalletPayments",
+        "name": "GetOrganizationsByUser",
+        "private": false
+    },
+    {
+        "name": "Private_SetOverallReservationInsuranceStatus",
+        "private": true
+    },
+    {
+        "name": "GetReservationByID",
+        "private": false,
+        "can_evaluate": {
+            "shortId": {
+                "$exists": true
+            }
+        }
+    },
+    {
+        "name": "HasInsuranceIssues",
+        "private": false
+    },
+    {
+        "name": "Private_GetOwners",
+        "private": true
+    },
+    {
+        "name": "GetPaymentDues",
+        "private": false
+    },
+    {
+        "name": "HandleCustomFunctionAuthentication",
+        "private": false,
+        "can_evaluate": {
+            "password": {
+                "$exists": true
+            },
+            "userEmail": {
+                "$exists": true
+            }
+        }
+    },
+    {
+        "name": "Private_GetAdminOrgs",
         "private": true
     },
     {
@@ -168,11 +156,31 @@
         "private": true
     },
     {
-        "name": "Private_SetOverallReservationInsuranceStatus",
+        "name": "Private_GetPaymentDues",
+        "private": true
+    },
+    {
+        "name": "Private_IsValidUser",
+        "private": true
+    },
+    {
+        "name": "Private_PopulateOwnerAndRenter",
         "private": true
     },
     {
         "name": "Private_BuildInsuranceHash",
+        "private": true
+    },
+    {
+        "name": "Private_GetChildOrgs",
+        "private": true
+    },
+    {
+        "name": "GetInsurances",
+        "private": false
+    },
+    {
+        "name": "Private_SearchReservation",
         "private": true
     }
 ]
